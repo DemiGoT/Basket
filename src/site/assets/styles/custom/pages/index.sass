@@ -1,0 +1,637 @@
+// index/dashboard page
+//-----------------------------------------------------------------------------------
+
+a
+  &:hover
+    text-decoration: none
+
+
+.container
+  width: 100%
+  max-width: 1110px
+
+.section-photo_img
+  display: block
+  width: 100%
+  
+
+.section-block .slick-next
+  right: 150px
+  width: 64px
+  height: 64px
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5)
+  border-radius: 90%
+  background-color: #202124
+  &:hover
+    background-color: #202124
+  &:focus
+    background-color: #202124
+  &:before
+    display: none
+  @media (max-width: 426px)
+    width: 32px
+    height: 32px
+    font-size: 15px
+    right: 35px
+
+
+.section-block .slick-prev
+  left: 150px
+  z-index: 1
+  width: 64px
+  height: 64px
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5)
+  background-color: #202124
+  border-radius: 90%
+  &:hover
+    background-color: #202124
+  &:focus
+    background-color: #202124
+  &:before
+    display: none
+  @media (max-width: 426px)
+    width: 32px
+    height: 32px
+    font-size: 15px
+    left: 35px
+
+
+.section-news .slick-prev, .slick-next
+  z-index: 1
+  &:hover
+    background-color: none
+  &:focus
+    background-color: none
+  &:before
+    display: none
+
+  
+.section-news .slick-prev
+  left: -35px
+
+
+.trainer-block .icon-arrow
+  color: #202124
+  font-size: 30px
+
+
+.trainer-block .slick-next
+  right: -15px
+  @media (max-width: 1164px)
+    right: 55px
+  @media (max-width: 791px)
+    right: 15px
+
+
+.trainer-block .slick-prev
+  @media (max-width: 1164px)
+    left: 45px
+  @media (max-width: 791px)
+    left: 5px
+
+
+.trainer-block .slick-prev, .slick-next
+  z-index: 1
+  &:hover
+    background-color: none
+  &:focus
+    background-color: none
+  &:before
+    display: none
+    
+
+.section-news .slick-next
+  right: -25px
+  @media (max-width: 1164px)
+    right: 55px
+  @media (max-width: 551px)
+    right: 10px
+
+
+.section-news .slick-prev
+  @media (max-width: 1164px)
+    left: 45px
+  @media (max-width: 551px)
+    left: 0px
+
+.archive-slider .slick-prev, .slick-next
+  z-index: 1
+  &:hover
+    background-color: none
+  &:focus
+    background-color: none
+  &:before
+    display: none
+    
+
+.archive-slider .slick-next
+  right: -15px
+
+
+.archive-slider .icon-arrow
+  color: #202124
+  font-size: 30px
+
+
+.section-news .icon-arrow
+  color: #202124
+  font-size: 30px
+
+
+.slick-arrow
+  font-size: 20px
+
+
+.mod-arrow
+  transform: rotate(180deg)
+
+
+.main
+  text-align: center
+  padding: 64px 0
+
+
+.main_span
+  font-weight: bold
+  color: #f57e27
+
+
+.main-block
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-top: 40px
+  @media (max-width: 927px)
+    flex-direction: column
+  @media (max-width: 321px)
+    margin-top: 20px
+
+
+.main-block-img
+  width: 555px
+  @media (max-width: 927px)
+    width: auto
+
+
+.main-block-text
+  width: calc(100% - 555px)
+  margin-top: 10px
+  @media (max-width: 927px)
+    width: 100%
+
+
+.main-block-text_text
+  opacity: 0.8
+  font-family: $Proxima-Regular
+  font-size: 22px
+  font-weight: bold
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.27
+  letter-spacing: normal
+  color: #202124
+  text-align: left
+  @media (max-width: 321px)
+    font-size: 16px
+
+
+.main-block-text_textblock
+  font-family: $Proxima-Regular
+  font-size: 16px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.5
+  letter-spacing: normal
+  color: #202124
+  text-align: left
+  margin-top: 18px
+  @media (max-width: 321px)
+    font-size: 14px
+
+
+.main-block-text-button
+  width: 233px
+  height: 50px
+  border-radius: 6px
+  background-color: rgba(245, 135, 51, 0.9)
+  box-shadow: 0 4px 10px 0 rgba(245, 135, 51, 0.5)
+  display: flex
+  align-items: center
+  justify-content: center
+  font-family: $Proxima-Bold
+  font-size: 16px
+  font-weight: bold
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: normal
+  text-align: center
+  color: #ffffff
+  margin-top: 24px
+  @media (max-width: 927px)
+    margin: 24px auto
+  @media (max-width: 376px)
+    width: 180px
+    height: 40px
+
+
+.section, .trainer, .main
+  padding: 64px 0
+  @media (max-width: 426px)
+    padding: 32px 0
+  @media (max-width: 321px)
+    padding: 16px 0
+
+
+.section
+  background-color: rgba(32,33,36,0.1)
+
+
+.section-news
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  margin: 40px -15px 0 -15px
+
+
+.section-headline_text, .trainer_headline_text, .archive-headline_text, .main_text
+  font-family: $Proxima-Bold
+  font-size: 40px
+  font-weight: 600
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: normal
+  text-align: center
+  color: #202124
+  @media (max-width: 426px)
+    font-size: 30px
+
+
+.section-block-news
+  width: 360px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 15px 0 15px
+
+
+.section-block-news-text
+  padding: 20px 20px
+  width: 320px
+  box-shadow: 0 6px 16px 0 rgba(161, 161, 161, 0.24)
+  border-bottom-left-radius: 6px
+  border-bottom-right-radius: 6px
+  background-color: #ffffff
+  @media (max-width: 321px)
+    width: 250px
+
+
+.section-block-news-text_headline
+  width: 320px
+  font-family: $Proxima-Bold
+  font-size: 22px
+  font-weight: bold
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.18
+  letter-spacing: normal
+  color: #202124
+
+
+.section-block-news-text-bottom
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  margin-top: 11px
+
+
+.section-block-new-text-bottom_text
+  font-family: $Proxima-Regular
+  font-size: 16px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: normal
+  text-align: left
+  color: #f57e27
+  text-decoration: underline
+  @media (max-width: 651px)
+    font-size: 12px
+  @media (max-width: 426px)
+    display: none
+
+
+.section-block-new-text-bottom_date
+  font-family: $Proxima-Regular
+  font-size: 12px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: normal
+  color: #fff
+  @media (max-width: 426px)
+    display: none
+
+
+.slick-dots
+  bottom: -30px
+  @media (max-width: 426px)
+    bottom: -10px
+
+
+.slick-dots li button:before
+  font-size: 28px
+  top: 20px
+
+
+.trainer-block
+  display: flex
+  justify-content: space-between
+
+
+.trainer-wrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin-top: 48px
+  @media (max-width: 426px)
+    margin-top: 24px
+
+
+.trainer-wrapper-images
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+.icon-trainer-ball
+  position: absolute
+  left: 7px
+  top: 2px
+  color: #000
+  width: 176px
+  height: 176px 
+
+
+.trainer-wrapper-name
+  padding-bottom: 20px
+
+
+.trainer-wrapper-name_text
+  font-family: $Proxima-Bold
+  font-size: 22px
+  font-weight: bold
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.18
+  letter-spacing: normal
+  text-align: center
+  color: #202124
+
+
+.trainer-wrapper-name_p
+  font-family: $Proxima-Regular
+  font-size: 16px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.5
+  letter-spacing: normal
+  text-align: center
+  color: #202124
+
+
+.archive-photo
+  margin-top: 40px
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  @media (max-width: 426px)
+    margin-top: 20px
+
+
+.archive-photo-wrapper
+  position: relative
+
+
+.archive-photo-wrapper_text
+  font-family: $Proxima-Bold
+  font-size: 22px
+  font-weight: bold
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.18
+  letter-spacing: normal
+  color: #ffffff
+  @media (max-width: 943px)
+    font-size: 14px
+  @media (max-width: 651px)
+    font-size: 12px
+  @media (max-width: 426px)
+    display: none
+
+
+.archive-photo-wrapper-text
+  width: 89%
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+  position: absolute
+  bottom: 0
+  right: 30px
+  padding: 0 0 35px 35px
+  @media (max-width: 769px)
+    right: 18px
+    padding: 0 0 25px 35px
+ 
+
+
+.archive-photo-wrapper-text-link
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: flex-end  
+
+
+.slick-initialized .slick-slide
+  display: flex
+
+
+.mod-archive-button
+  margin: 25px auto 0 auto
+  @media (max-width: 1163px)
+    margin-top: 80px
+  @media (max-width: 426px)
+    margin-top: 40px
+
+
+.mod-margin
+  padding: 48px 0
+  @media (max-width: 769px)
+    padding: 24px 0
+  @media (max-width: 321px)
+    padding: 16px 0
+
+
+.mod-video
+  flex-direction: row-reverse
+
+
+.mod-video-headline
+  bottom: 40px  
+
+
+.network
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  @media (max-width: 1025px)
+    flex-direction: column
+    
+
+
+.network-store
+  display: flex
+  flex-direction: column
+  margin: -17.5px 0
+
+
+.network-vk
+  @media (max-width: 769px)
+    margin-right: 15px
+
+
+.icon-app-store, .icon-google-play
+  width: 223px
+  height: 64px
+  margin: 17.5px 0
+  @media (max-width: 426px)
+    width: 160px
+    height: 50px
+
+
+.archive-photo-wrapper-block-text
+  position: absolute
+  bottom: 0
+  left: 0
+  padding: 0 20px 30px 30px
+  @media (max-width: 769px)
+    padding: 0 20px 20px 20px
+
+
+.archive-photo-wrapper-block-date
+  position: absolute
+  top: 0
+  right: 0
+  padding: 30px 30px 0 0
+  @media (max-width: 769px)
+    padding: 20px 20px 0 0
+
+
+.mod-store
+  display: none
+  @media (max-width: 1024px)
+    display: flex
+
+
+.mod-display
+  display: flex
+  align-items: center
+  justify-content: center
+  @media (max-width: 1024px)
+    display: none
+
+
+.network-adapt
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-top: 50px
+  @media (max-width: 769px)
+    margin-top: 30px
+
+
+.map
+  height: 571px
+  @media (max-width: 769px)
+    height: 350px
+  @media (max-width: 426px)
+    height: 200px
+  @media (max-width: 321px)
+    height: 150px
+
+
+.map-block
+  position: relative
+
+
+.map-block-wrapper
+  position: absolute
+  background-color: #ffffff
+  width: 312px
+  top: 64px
+  right: 150px
+  padding: 64px
+  text-align: center
+  @media (max-width: 1024px)
+    top: 20px
+    right: 20px
+    padding: 32px
+  @media (max-width: 769px)
+   display: none
+
+
+.map-block-wrapper_headline
+  font-family: $Proxima-Bold
+  font-size: 40px
+  font-weight: 600
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: normal
+  text-align: center
+  color: #202124
+  padding-bottom: 40px
+
+
+.map-block-wrapper-point
+  margin-bottom: 32px
+  display: flex
+  flex-direction: row
+  &:last-child
+    margin-top: 0
+
+
+.map-block-wrapper-point_text
+  opacity: 0.9
+  font-family: $Proxima-Regular
+  font-size: 16px
+  font-weight: 600
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.5
+  letter-spacing: 1.14px
+  color: #202124
+
+
+.icon-point, .icon-phone, .icon-message
+  width: 15px
+  height: 21px
+  margin-right: 14.5px
+  color: #202124
+
+
+.mod-map-button
+  margin: 40px auto 0 auto

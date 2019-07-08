@@ -1,0 +1,252 @@
+// header
+//-----------------------------------------------------------------------------------
+
+.header-menu
+    background-color: #202124
+    padding: 20px 0
+
+
+.header-menu-wrapper
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+
+.header-menu-wrapper-block
+    display: flex
+    flex-direction: row
+
+
+.header-logo_img
+    display: block
+    object-fit: cover
+    width: 66px
+    height: 66px
+
+
+.header-logo
+    display: flex
+    align-items: flex-end
+    width: 68px
+    height: 68px
+
+
+.icon
+    color: #ffffff
+    // opacity: 0.7
+
+
+.icon-vk, .icon-instagram, .icon-android, .icon-apple
+    height: 24px
+    width: 24px
+    @media (max-width: 476px)
+        width: 16px
+        height: 16px
+
+
+.header-headline
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    margin-left: 7px
+    width: 100%
+
+
+.header-headline-icon
+    display: flex
+    flex-direction: row
+    margin: 0 -9px
+
+
+.header-headline-icon-wrapper
+    width: 24px
+    height: 24px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 9px
+    &:hover
+        text-decoration: none
+
+
+.header-headline_headline
+    font-family: $Proxima-Bold
+    font-size: 17px
+    font-weight: bold
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.18
+    letter-spacing: normal
+    color: #ffffff
+
+
+.header-headline_school_text
+    opacity: 0.9
+    font-family: $Proxima-Regular
+    font-size: 10px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.2
+    letter-spacing: -0.1px
+    color: #ffffff
+
+
+.header-menu-block
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+
+.header-menu-wrapper-about
+    display: flex
+    flex-direction: row
+    align-items: flex-end
+    flex-wrap: wrap
+    @media (max-width: 1024px)
+        display: none
+
+
+.header-menu-wrapper-about_link
+    font-family: $Proxima-Bold
+    font-size: 11px
+    font-weight: bold
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: -0.18px
+    color: rgba(255,255,255,0.9)
+    padding: 0 13px
+
+
+.header-menu-block-phone
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+
+.icon-header-phone
+    width: 13.3px
+    height: 13.3px
+
+
+.header-menu-block-phone_text
+    font-family: $Proxima-Bold
+    font-size: 14px
+    font-weight: bold
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.71
+    letter-spacing: 1px
+    color: #ffffff
+    opacity: 0.9
+
+
+.mod-footer-text
+    color: rgba(255, 255, 255, 0.6)
+
+
+.header-account
+    background-color: #ffffff
+    padding: 16px 0
+
+
+.header-menu-account
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: flex-start
+    margin: 0 -15px
+
+
+.header-menu-account-wrapper
+    display: flex
+    flex-direction: column
+    margin: 4px 15px 0 15px
+    position: relative
+
+
+.header-menu-account-wrapper.slick-active   
+    &:after
+        content: ''
+        position: absolute
+        top: 0
+        right: -15px
+        height: 99px
+        border-right: 1px solid rgba(17,17,17,0.1)
+
+
+.header-menu-account-headline_text
+    font-family: $Proxima-Bold
+    font-size: 12px
+    font-weight: 600
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    color: #111111
+
+
+.header-menu-account-team
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+
+.header-menu-account-team_text
+    font-family: $Proxima-Regular
+    font-size: 12px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    color: #111111
+    margin-left: 10px
+
+
+.header-menu-account-block
+    display: flex
+    flex-direction: row
+    align-items: center
+
+
+.header-menu-account-team-block
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-top: 8px
+    width: 145px
+
+
+.header-menu-account-team-points_text
+    font-family: $Proxima-Bold
+    font-size: 12px
+    font-weight: bold
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: right
+    color: #111111
+
+
+.header-menu-account-team-points
+    margin-left: auto       
+
+
+.mod-color-arrow
+    color: #f57e27
+
+
+.header-menu-account .slick-prev
+    left: -70px
+    &:before
+        display: none
+
+
+.header-menu-account .slick-next
+    right: -10px
+    &:before
+        display: none
