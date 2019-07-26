@@ -1,6 +1,10 @@
 // index/dashboard page
 //-----------------------------------------------------------------------------------
 
+*
+  box-sizing: border-box
+
+
 a
   &:hover
     text-decoration: none
@@ -78,16 +82,17 @@ a
 
 
 .trainer-block .slick-next
-  right: -15px
+  right: -25px
   @media (max-width: 1164px)
-    right: 55px
+    right: 45px
   @media (max-width: 791px)
     right: 15px
 
 
 .trainer-block .slick-prev
+  left: -35px
   @media (max-width: 1164px)
-    left: 45px
+    left: 35px
   @media (max-width: 791px)
     left: 5px
 
@@ -127,7 +132,11 @@ a
     
 
 .archive-slider .slick-next
-  right: -15px
+  right: -25px
+
+
+.archive-slider .slick-prev
+  left: -35px
 
 
 .archive-slider .icon-arrow
@@ -174,6 +183,8 @@ a
   margin-right: 30px
   @media (max-width: 927px)
     width: auto
+    margin-right: 0
+    margin-bottom: 20px
 
 
 .main-block-img_img
@@ -181,6 +192,7 @@ a
   height: 357px
   object-fit: cover
   box-shadow: 0 6px 16px 0 rgba(161, 161, 161, 0.5)
+  border-radius: 6px
 
 
 .main-block-text
@@ -294,21 +306,26 @@ a
   width: 360px
   height: 220px
   object-fit: cover
+  border-top-right-radius: 6px
+  border-top-left-radius: 6px
+  background-image: linear-gradient(to bottom, rgba(32, 33, 36, 0), rgba(32, 33, 36, 0.44))
 
 
 .section-block-news-text
   padding: 20px 20px
-  width: 320px
+  width: 360px
   box-shadow: 0 6px 16px 0 rgba(161, 161, 161, 0.24)
   border-bottom-left-radius: 6px
   border-bottom-right-radius: 6px
   background-color: #ffffff
   @media (max-width: 321px)
-    width: 250px
+    width: 290px
 
 
 .section-block-news-text_headline
   width: 320px
+  max-width: 100%
+  min-height: 50px
   font-family: $Proxima-Bold
   font-size: 22px
   font-weight: bold
@@ -317,6 +334,11 @@ a
   line-height: 1.18
   letter-spacing: normal
   color: #202124
+  overflow: hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-line-clamp: 2
+  -webkit-box-orient: vertical
 
 
 .section-block-news-text-bottom
@@ -399,8 +421,6 @@ a
 
 .icon-trainer-ball
   position: absolute
-  left: 7px
-  top: 2px
   color: #000
   width: 176px
   height: 176px 
@@ -439,6 +459,7 @@ a
 
 .archive-photo
   margin-top: 40px
+  padding: 0 10px 10px 10px
   display: flex
   flex-direction: row
   align-items: center
@@ -462,18 +483,28 @@ a
 .archive-photo-wrapper_img
   width: 555px
   height: 555px
+  max-width: 100%
+  max-height: 100%
   object-fit: cover
   border-radius: 6px
   box-shadow: 0 6px 16px 0 rgba(161, 161, 161, 0.5)
+  @media (max-width: 426px)
+    width: 350px
+    height: 350px
 
 
 .archive-photo-wrapper_images
   width: 555px
   height: 263px
+  max-width: 100%
+  max-height: 100%
   object-fit: cover
   border-radius: 6px
   box-shadow: 0 6px 16px 0 rgba(161, 161, 161, 0.5)
   background-image: linear-gradient(to bottom, rgba(32, 33, 36, 0), rgba(32, 33, 36, 0.8))
+  @media (max-width: 426px)
+    width: 350px
+    height: 160px
 
 
 .mod-archive-video
@@ -491,6 +522,11 @@ a
   letter-spacing: normal
   color: #ffffff
   width: 406px
+  overflow: hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-line-clamp: 2
+  -webkit-box-orient: vertical
   @media (max-width: 943px)
     font-size: 14px
   @media (max-width: 651px)
@@ -500,19 +536,15 @@ a
 
 
 .archive-photo-wrapper-text
-  width: 89%
   display: flex
   flex-direction: column
   justify-content: flex-start
   align-items: flex-start
   position: absolute
   bottom: 0
-  right: 30px
-  padding: 0 0 35px 35px
-  @media (max-width: 769px)
-    right: 18px
-    padding: 0 0 25px 35px
- 
+  left: 0
+  width: 100%
+  padding: 0 20px 20px 20px
 
 
 .archive-photo-wrapper-text-link
@@ -582,11 +614,13 @@ a
 
 .archive-photo-wrapper-block-text
   position: absolute
-  bottom: 0
-  left: 0
-  padding: 0 20px 30px 30px
-  @media (max-width: 769px)
-    padding: 0 20px 20px 20px
+  bottom: 20px
+  left: 20px
+  overflow: hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-line-clamp: 2
+  -webkit-box-orient: vertical
 
 
 .archive-photo-wrapper-block-date
@@ -614,8 +648,14 @@ a
 
 .network-ok_img, .network-vk_img
   width: 390px
+  max-width: 100%
   height: 284px
+  max-height: 100%
   object-fit: cover
+  border-radius: 6px
+  box-shadow: 0 6px 16px 0 rgba(161, 161, 161, 0.5)
+  @media (max-width: 426px)
+    height: 160px
 
 
 .network-adapt
@@ -645,7 +685,7 @@ a
 .map-block-wrapper
   position: absolute
   background-color: #ffffff
-  width: 312px
+  width: 440px
   top: 64px
   right: 150px
   padding: 64px
